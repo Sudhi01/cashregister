@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cash Register App</h1>
+
+        <h3>Enter the bill amount & cash given and know the minimum number of notes return to the customer</h3>
+
+        <div class="billclass">
+
+            
+            <lable for="bill-amount" class="bill-lable">BILL AMOUNT</lable>
+            <input type="number" id="bill-amount" min="0" required />
+            <button id="next-button">NEXT</button>
+            
+            <lable for="cash-given" class="cash-lable">CASH GIVEN</lable>
+            <input type="number" id="cash-given" min="0" required/>
+            <button id="check-button">CALCULATE</button>
+        </div>
+
+        
+        
+        <p id="error-massage"></p>
+
+        
+        <div class="table">
+        <table id="dlist" class="change-table">
+            <caption>
+                RETURN CHANGE
+            </caption>
+            <tr>
+                <th>No. of Notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>
+
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>200</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>2</td>
+                <td>1</td>
+
+            </tr>
+        </table>
+    </div>
+
+    </div>
+
+</body>
+
+<script src="./app.js"></script>
+
+</html>
